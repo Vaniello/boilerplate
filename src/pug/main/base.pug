@@ -1,0 +1,19 @@
+include ../config/config
+include ../includes/blocks/index
+include ../mixins/index
+include ../functions/index
+
+include ../includes/base/nav
+include ../includes/base/footer
+
+block variables
+
+doctype html
+html(lang=lang)
+	head
+		include ../includes/base/head
+	body
+		+nav({})
+		.content
+			block content
+		+footer({})
